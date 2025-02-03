@@ -33,6 +33,7 @@ jobs:
           source: "build/*"
           target: ${{ secrets.DEPLOY_PATH }}
           strip_components: 1
+          port: 22  # Ensure this matches your SSH port
 
       - name: Restart Apache
         uses: appleboy/ssh-action@master
