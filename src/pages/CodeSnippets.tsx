@@ -34,7 +34,7 @@ const CodeSnippets = () => {
   };
 
   return (
-    <div className="p-6">
+    <div>
       <h1 className="text-2xl font-bold mb-4">Code Snippets</h1>
       <div className="space-y-4">
         {snippets.map(({ id, title, code }) => (
